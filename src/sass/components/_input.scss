@@ -1,0 +1,40 @@
+// ==========================================================================
+// Input
+// ==========================================================================
+
+// Reset fuckin' ios8 input style
+input[type=submit] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+// Reset fuckin' mozilla button/input spaces
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin-top:-2px;
+  margin-bottom: -2px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+.input {
+
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px $white inset;
+    -webkit-text-fill-color: $white;
+
+    .form--login & {
+      -webkit-box-shadow: 0 0 0 1000px $white inset;
+      -webkit-text-fill-color: $white;
+    }
+  }
+  &::-ms-clear {
+    display: none;
+  }
+  &::-ms-reveal {
+    display: none;
+  }
+}

@@ -1,0 +1,35 @@
+// ==========================================================================
+// Base
+// ==========================================================================
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+*:focus,
+*:hover,
+*:active {
+  outline: 0 none;
+}
+
+html {
+  background-color: $black;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+html,
+html a {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+body {
+  color: $color-foreground;
+  font-family: $font-default;
+  font-weight: normal;
+  min-height: 100%;
+  text-size-adjust: none;
+}

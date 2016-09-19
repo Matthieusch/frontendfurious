@@ -1,0 +1,37 @@
+{
+  "name": "frontandfurious",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-changed": "^1.2.1",
+    "gulp-clean": "~0.3.1",
+    "gulp-concat": "~2.6.0",
+    "gulp-if": "~1.2.5",
+    "gulp-imagemin": "^2.2.1",
+    "imagemin-jpegtran": "~4.3.0",
+    "imagemin-pngquant": "^4.0.0",
+    "gulp-jshint": "~1.11.2",
+    "gulp-load-plugins": "^0.4.0",
+    "gulp-notify": "~2.2.0",
+    "gulp-plumber": "~1.0.1",
+    "gulp-rename": "~1.2.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-sourcemaps": "~1.5.2",
+    "gulp-uglify": "~1.2.0",
+    "gulp-util": "^2.2.14",
+    "gulp-w3cjs": "^0.3.0",
+    "gulp-watch": "^4.2.0",
+    "jshint-stylish": "~2.0.1",
+    "require-dir": "~0.3.0",
+    "run-sequence": "~1.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthieu Schneider",
+  "license": "MS-RL"
+}
+

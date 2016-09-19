@@ -1,0 +1,59 @@
+// ==========================================================================
+// Grid
+// ==========================================================================
+
+.container {
+  margin: 0 auto;
+  padding: 0 28px;
+  position: relative;
+  width: 1300px;
+}
+
+.container--small {
+  margin: 0 0 0 83px;
+  width: 800px;
+}
+
+.row {
+  margin-left: -14px;
+  margin-right: -14px;
+}
+
+.col {
+  float: left;
+  min-height: 1px;
+  padding-right: 14px;
+  padding-left: 14px;
+  position: relative;
+  width: 100%;
+}
+.col--50 {
+  width: 50%;
+}
+.col--30 {
+  width: 25%;
+}
+.col--40 {
+  width: 40%;
+}
+.col--60 {
+  width: 60%;
+}
+
+.container:before,
+.row:before,
+.container:after,
+.row:after {
+  display: table;
+  content: " ";
+}
+.container:after,
+.row:after {
+  clear: both;
+}
+
+@media (max-width: 1340px) {
+  .container {
+    width: 1000px;
+  }
+}

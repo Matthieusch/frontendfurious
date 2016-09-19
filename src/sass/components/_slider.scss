@@ -1,0 +1,43 @@
+// ==========================================================================
+// Slider
+// ==========================================================================
+
+.slider {
+  background: $black url(../img/loader--black.gif) no-repeat center center;
+  max-height: 420px;
+  min-height: 420px;
+  overflow: hidden;
+  position: relative;
+}
+
+.owl-carousel {
+  min-height: 420px;
+}
+
+.owl-prev,
+.owl-next {
+
+}
+
+.owl-prev {
+
+}
+
+.owl-next {
+
+}
+
+.owl-item {
+  cursor: pointer;
+}
+
+@media (max-width: 1340px) {
+  .slider {
+    max-height: 323px;
+    min-height: 323px;
+  }
+
+  .owl-carousel {
+    min-height: 323px;
+  }
+}

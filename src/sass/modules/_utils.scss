@@ -1,0 +1,21 @@
+// ==========================================================================
+// Utils
+// ==========================================================================
+
+.text--center {
+  text-align: center;
+}
+
+.text--right {
+  text-align: right;
+}
+
+.block-table {
+  display: table;
+  width: 100%;
+}
+
+.block-table__cell {
+  display: table-cell;
+  vertical-align: middle;
+}
