@@ -25,7 +25,7 @@ gulp.task('css', function() {
         outputStyle: 'compressed',
         errLogToConsole: true
       }))
-      .pipe(autoprefixer("last 2 versions", "> 1%", "IE 9"))
+      .pipe(autoprefixer({ browsers: ['last 2 versions', '> 1%', 'IE 9']}))
       .pipe(rename({suffix: '.min'}))
     .pipe(gulpif(writeSourcemaps, sourcemaps.write()))
     .pipe(gulp.dest(config.dest));

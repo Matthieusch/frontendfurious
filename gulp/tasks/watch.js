@@ -28,9 +28,7 @@ gulp.task('watch', function () {
 
   // script
   watch(config.script.mainSrc, function() {
-    setTimeout(function() {
-      gulp.start('script-main');
-    }, 1500);
+    gulp.start('script-main');
   });
 
   // svg

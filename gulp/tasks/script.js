@@ -34,10 +34,10 @@ gulp.task('script-main', ['script-lint'], function() {
 });
 
 // Concatenate & Minify Vendor JS
-gulp.task('script-vendor-footer', function() {
+gulp.task('script-vendors-footer', function() {
   return gulp.src(config.vendorFooterSrc)
     .pipe(gulpif(writeSourcemaps, sourcemaps.init()))
-      .pipe(concat('vendor-footer.js'))
+      .pipe(concat('vendors-footer.js'))
       .pipe(rename({suffix: '.min'}))
       .pipe(uglify())
     .pipe(gulpif(writeSourcemaps, sourcemaps.write()))
@@ -45,10 +45,10 @@ gulp.task('script-vendor-footer', function() {
 });
 
 // Minify Modernizr JS
-gulp.task('script-vendor-header', function() {
+gulp.task('script-vendors-header', function() {
   return gulp.src(config.vendorHeaderSrc)
     .pipe(gulpif(writeSourcemaps, sourcemaps.init()))
-      .pipe(concat('vendor-header.js'))
+      .pipe(concat('vendors-header.js'))
       .pipe(rename({suffix: '.min'}))
       .pipe(uglify())
     .pipe(gulpif(writeSourcemaps, sourcemaps.write()))
@@ -57,6 +57,6 @@ gulp.task('script-vendor-header', function() {
 
 // Synthetize javascript tasks in one
 gulp.task('script', function(callback) {
-  runSequence('script-vendor-header', 'script-vendor-footer', 'script-main', callback);
+  runSequence('script-vendors-header', 'script-vendors-footer', 'script-main', callback);
 });
 
