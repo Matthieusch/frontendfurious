@@ -7,7 +7,7 @@
     "modernizr": "~2.8.3",
     "jquery-lazy": "~0.6.4",
     "wow": "WOW#~1.1.2",
-    "svgxuse": "~1.1.17",
+    "svgxuse": "~1.1.22",
     "owl.carousel": "owl-carousel2#^2.1.6"
   },
   "ignore": [
