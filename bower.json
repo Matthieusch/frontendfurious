@@ -1,14 +1,16 @@
 {
-  "name": "frontandfurious",
-  "version": "1.0.0",
+  "name": "frontendfurious",
+  "version": "2.0.0",
   "description": "",
   "devDependencies": {
-    "jquery": "1.10.0",
-    "modernizr": "~2.8.3",
-    "jquery-lazy": "~0.6.4",
+    "jquery": "3.1.1",
+    "modernizr": "~3.3.1",
+    "jquery-lazy": "~1.7.4",
     "wow": "WOW#~1.1.2",
-    "svgxuse": "~1.1.22",
-    "owl.carousel": "owl-carousel2#^2.1.6"
+    "svgxuse": "~1.1.23",
+    "owl.carousel": "owl-carousel2#^2.1.6",
+    "bootstrap-sass": "^3.3.7",
+    "normalize-css": "^5.0.0"
   },
   "ignore": [
     "**/.*",
@@ -18,5 +20,5 @@
   "authors": [
     "Matthieu Schneider"
   ],
-  "license": "MS-RL"
+  "license": "MIT"
 }

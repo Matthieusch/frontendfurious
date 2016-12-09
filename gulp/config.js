@@ -1,7 +1,7 @@
 // Configurations :
 var project = {};
-project.name = 'millevolts';
-project.dest = '../www/sites/all/themes/' + project.name + '/assets/';
+project.name = 'breizhgwer';
+project.dest = '../www/wp-content/themes/' + project.name + '/assets/';
 
 module.exports = {
   clean: {
@@ -35,9 +35,8 @@ module.exports = {
     mainSrc: ['./src/js/main.js', './src/js/**/*.js', '!./src/js/vendor/**'],
     vendorHeaderSrc: './bower_components/modernizr/modernizr.js',
     vendorFooterSrc: [
-      './bower_components/jquery/jquery.js',
+      './bower_components/jquery/src/jquery.js',
       './bower_components/owl.carousel/dist/owl.carousel.js',
-      './bower_components/outdated-browser/outdatedbrowser/outdatedbrowser.js',
       './bower_components/jquery-lazy/jquery.lazy.js',
       './bower_components/wow/dist/wow.js',
       './bower_components/svgxuse/svgxuse.js'

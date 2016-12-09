@@ -1,26 +1,28 @@
 // Modules
 
-@import "modules/normalize";
 @import "modules/variables";
 @import "modules/utils";
 @import "modules/fonts";
 @import "modules/typography";
-@import "modules/form";
 
 
 // Vendors
 
-@import "vendor/wow";
-@import "vendor/outdatedbrowser";
-@import "vendor/owl.carousel";
+@import "./../../bower_components/normalize-css/normalize";
+@import "./../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/clearfix";
+@import "./../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/grid-framework";
+@import "./../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/grid";
+@import "./../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "./../../bower_components/wow/css/libs/animate";
+@import "./../../bower_components/owl.carousel/src/scss/core";
+
 
 // Components
 
-@import "components/grid";
+@import "components/form";
 @import "components/button";
 @import "components/input";
 @import "components/icon";
-@import "components/slider";
 
 
 // Partials
