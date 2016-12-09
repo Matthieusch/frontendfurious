@@ -1,30 +1,43 @@
-# Front and Furious
+# Front-end Furious
 
 ## Présentation
 
-Tous les assets front-end sont gérés via gulp.
+Tous les assets front sont gérés via gulp.
 
 ## Pré-requis : ImageMagick
 
-### Linux
-`apt-get install imagemagick`
+`sudo apt-get install imagemagick`
 
-### Mac with Homebrew
+## Pré-requis : Nodejs & npm
+
 ```
-brew update
-brew upgrade
-brew install imagemagick
+sudo apt-get update
+sudo apt-get install nodejs npm
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+```
+
+Redémarrer la console ssh pour mettre à jour le cache des versions :
+```
+node -v
+npm -v
 ```
 
 ### Déployer les assets
 
-Requis : `node v5.0.0` et `npm 3.3.6`
+Requis : `node v5.0.0+` et `npm 3.3.6+`
 
-Dossier `frontend/` :
+Dossier `front/` :
 
 ```
 npm install
+
+sudo npm install -g bower
 bower install
+
+sudo npm install -g gulp
 gulp build --production
 ```
 
