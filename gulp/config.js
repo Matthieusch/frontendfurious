@@ -1,7 +1,8 @@
 // Configurations :
 var project = {};
-project.name = 'breizhgwer';
-project.dest = '../www/wp-content/themes/' + project.name + '/assets/';
+// project.name = '';
+// project.dest = '../www/wp-content/themes/' + project.name + '/assets/';
+project.dest = '../www/assets/';
 
 module.exports = {
   clean: {
@@ -33,9 +34,9 @@ module.exports = {
   },
   script: {
     mainSrc: ['./src/js/main.js', './src/js/**/*.js', '!./src/js/vendor/**'],
-    vendorHeaderSrc: './bower_components/modernizr/modernizr.js',
+    vendorHeaderSrc: '',
     vendorFooterSrc: [
-      './bower_components/jquery/src/jquery.js',
+      './bower_components/jquery/dist/jquery.js',
       './bower_components/owl.carousel/dist/owl.carousel.js',
       './bower_components/jquery-lazy/jquery.lazy.js',
       './bower_components/wow/dist/wow.js',

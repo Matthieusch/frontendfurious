@@ -3,8 +3,7 @@ var app;
 (function() {
   'use strict';
 
-  var document,
-      $ = jQuery.noConflict();
+  var $ = jQuery.noConflict();
 
   var s;
   app = {
@@ -33,7 +32,7 @@ var app;
         if(s.debug) console.log('%cTime until DOMready: ' + (Date.now()-s.timerStart)/1000+'sec', 'color: #ad0040');
       });
 
-      $(window).load(function() {
+      $(window).on('load', function() {
         if(s.debug) console.log('%cTime until everything loaded: ' + (Date.now()-s.timerStart)/1000+'sec', 'color: #ad0040');
 
         // All is loaded
@@ -61,7 +60,7 @@ var app;
     },
 
     // debugEvent
-    console: function(messages) {
+    log: function(messages) {
       var self = this,
           s = self.settings;
 
@@ -87,7 +86,7 @@ var app;
     },
 
     smoothScrolling: function () {
-      $('a[href*=#]:not([href=#])').bind('click', function() {
+      $('a[href*=\\#]:not([href=\\#])').on('click', function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
           var target = $(this.hash);
 

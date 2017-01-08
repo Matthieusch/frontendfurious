@@ -4,7 +4,6 @@
   "description": "",
   "devDependencies": {
     "jquery": "3.1.1",
-    "modernizr": "~3.3.1",
     "jquery-lazy": "~1.7.4",
     "wow": "WOW#~1.1.2",
     "svgxuse": "~1.1.23",
